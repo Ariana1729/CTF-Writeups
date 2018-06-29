@@ -97,7 +97,7 @@ The chance of it replying with 0 for one of the characters is 2/3, and 1 is 1/3.
 
 Since we need 1024 pings, we raise this to the 1024th power, and get around 65%(65.083747...%). Hmm not that high. Maybe we should open the exploit multiple times.
 
-Now we'll just have to send 'BA'+long_to_bytes(c*pow(2,i*e,N)%N) for i=1 to i=1025 times... this will take quite some time.
+Now we'll just have to send 'BA'+long_to_bytes(c\*pow(2,i\*e,N)%N) for i=1 to i=1025 times... this will take quite some time.
 
 # Script
 

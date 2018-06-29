@@ -73,7 +73,8 @@ for ki in KeyScheduler(key):
   L, R = R, Xor(L, CipherFunction(ki, R))
 ciphertext = Concat(R, L)
 ciphertext = [ciphertext[IP_INV[i] - 1] for i in range(64)]
-`
+```
+
 Looking through the whole function, the only line that changes the message is:
 
 `L, R = R, Xor(L, CipherFunction(ki, R))`

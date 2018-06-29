@@ -59,7 +59,7 @@ b'\xe9A\x8a\x94\xde\x9aM\xbd'
 ```
 
 The payload works!
-
+## Solution for last condition
 Now we're left with finding a message and key that maps back to the same message, since `XOR(m,m)=0`
 
 Bruteforce would take way too long so lets start trying to understand the algorithm.

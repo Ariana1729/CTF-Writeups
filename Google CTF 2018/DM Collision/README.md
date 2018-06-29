@@ -1,6 +1,6 @@
 # DM Collision
 >Can you find a collision in this compression function?
-We are given a `challenge.py` and a `not_des.py`.
+We are given a [challenge.py](./challenge.py) and a [not_des.py](not_des.py).
 
 `not_des.py` looks like a typical DES implementation, but with S-boxes are in this order:
 >SBOXES = [S6, S4, S1, S5, S3, S2, S8, S7]
@@ -65,6 +65,7 @@ Now we're left with finding a message and key that maps back to the same message
 Bruteforce would take way too long so lets start trying to understand the algorithm.
 
 Looking at the `DESEncrypt` function, we see that the message is first permuted and then split into 2 strings, L and R, then they go through some transforms before being concatenated and permuted back.
+
 ```python
 plaintext = [plaintext[IP[i] - 1] for i in range(64)]
 L, R = plaintext[:32], plaintext[32:]
@@ -137,7 +138,7 @@ This can also be visualised by having a array of length 32, being split into 8 a
 
 Since this is then split into 8 arrays of 6, we'll have to ensure that the last 2 elements on an array are identical to the first to elements of the next array.
 
-Firstly let's write a script to print out every element that ends with a zero in the format required by CipherFunction(so like `[2][10]->101010`).
+Firstly let's write a [script](sol.py) to print out every element that ends with a zero in the format required by CipherFunction(so like `[2][10]->101010`).
 
 ```
 Format: SBOX[n],bin number for lookup
@@ -176,6 +177,7 @@ Second lookup possible solutions:
 
 etc...
 ```
+[Full list](./possiblesols.txt)
 
 However we realize that we can only do 7 lookups with all 0, but the 8th lookup can never be 0 since the last 2 digits for the 7th lookup does not correspond to the first 2 digits of the 8th lookup.
 

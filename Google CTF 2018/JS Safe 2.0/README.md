@@ -125,11 +125,11 @@ debug /Ӈ#7ùª9¨M¤À.áÔ¥6¦¨¹.ÿÓÂ.Ö£JºÓ¹WþÊmãÖÚG¤¢dÈ9&ò
 ```
 
 
-We see that x = h(str(x)); should be responsible for this behavior, so let's just substitute the original function back into x.
+We see that x = h(str(x)); should be responsible for this behavior, so let's just substitute the original function back into x. Since x will always be passed to the function, I've also made it easier to process by just hardcoding the output and resultant a,b as I was going to solve the problem from h first, but it was not so useful.
+
+[Simplified code](./js_safe_2simplified.html)
 
 However, isn't our function parameter x? How does javascript know when to use what? I did not manage figure this during the CTF and continued trying to get the flag.
-
-[Code with logs](./js_safe_2log.html)
 
 Now looking at the log, we see a interesting statement:
 
@@ -185,8 +185,8 @@ p.s. After the competition I found out that both x(func name, english) and х(pa
 
 [Wikipedia link to the strange x](https://en.wikipedia.org/wiki/Kha_(Cyrillic))
 
-Since x will always be passed to the function, I've made it simpler by just hardcoding the output and resultant a,b, was going to solve the problem from h first.
 h's function:
+
 a is the sum of the previous a and all the character values in the input string mod 65521
 
 `a=0x100,s="ABCD"->a=0x100+0x41+0x42+0x43+0x44 % 65521`
@@ -196,5 +196,3 @@ and b is the sum of the previous b with a mod 65521
 `a=0x100,b=0x10,s="ABCD",b=0x10+(0x100+0x41)+(0x100+0x41+0x42)... mod 65521`
 
 This would be pretty easy to unhash with something like z3 or with simple polynomials
-
-[Simplified code](./js_safe_2simplified.html)

@@ -7,6 +7,7 @@ DM Collision(176):
 Perfect secrecy(158):
 
 [writeup](./Perfect%20Secrecy/README.md)
+
 [script](./Perfect%20Secrecy/script.py)
 
 Web:

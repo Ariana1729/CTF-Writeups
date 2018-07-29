@@ -31,12 +31,12 @@ aes\_cnv(871):
 Misc:
 
 
-
 Drill(842):
 
-
+[writeup](./Drill/README.md)
 
 Music(930):
 
+[writeup](./Music/README.md)
 
 

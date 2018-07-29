@@ -15,7 +15,7 @@ where `c1,2,3` are some small constants so that `p2,3,4` are prime and `p1` is 2
 
 ## Factoring
 
-Using `p1\*p4≈1000p1^2=(100p1)\*(10p1)≈p2\*p3`, we see that this is a basic setup for fermat factorization, thus I just went to github to grab some [fermat factorization code](fermat.py) to find `p1\*p4` and `p2\*p3`
+Using `p1*p4≈1000p1^2=(100p1)*(10p1)≈p2*p3`, we see that this is a basic setup for fermat factorization, thus I just went to github to grab some [fermat factorization code](fermat.py) to find `p1*p4` and `p2*p3`
 
 ```
 p1*p4=24556891073418994576751524607635760117996811894972202516187698043229292302109114380884247668494990605537878648233446996676371523211326680052450374168750431
@@ -36,4 +36,4 @@ With this we can easily [decrypt](decrypt.py) and get the flag
 
 >Flag: ISITDTU{f6b2b7472273aacf803ecfe93607a914}
 
-p.s. I believe that `p1` is 251 bits long to emulate 512-bit RSA. Notice how `N=p1\*p2\*p3\*p4≈(1000p1^2)^2`, `1000p1^2` is likely to be 512 bits long(`log2(10)^3+251*3=511.965784...`)
+p.s. I believe that `p1` is 251 bits long to emulate 512-bit RSA. Notice how `N=p1*p2*p3*p4≈(1000p1^2)^2`, `1000p1^2` is likely to be 512 bits long(`log2(10)^3+251*3=511.965784...`)

@@ -19,7 +19,7 @@ Padding function:
 pad = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * chr(BLOCK_SIZE - len(s) % BLOCK_SIZE)
 ```
 
-Notice that pad will actually add an extra block at the end, `"\x10"*16`, if the input size is a multiple of 16, like a typical AES_CBC(and other schemes too) padding
+Notice that pad will actually add an extra block at the end, `"\x10"*16`, if the input size is a multiple of 16, , which is just normal PKCS#7 padding
 
 
 toblock(): splits array at every 16 bytes

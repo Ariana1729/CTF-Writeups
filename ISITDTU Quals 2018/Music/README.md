@@ -14,4 +14,4 @@ Opening the riff file with audacity, we immediately see binary data at the start
 
 After painfully writing out the binary data, we get the flag
 
->Flag: kinda lazy to convert again:/
+>Flag: ISITDTU{I_lik3_mus1c_s0_much}

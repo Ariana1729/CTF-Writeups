@@ -7,11 +7,11 @@ We are given a [server.py](./server.py).
 
 This challenge wants us to forge a message that is encoded with AES CTR, and there's a MAC code(GHASH)
 
-##AES CTR forging
+## AES CTR forging
 
 AES CTR is relatively simple to forge, given a plaintext(pt) and a ciphertext(ct), if the nonce is the same, `pt^ct` is always constant.
 
-##GHASH
+## GHASH
 
 GHASH function is a pseudo-hashing function.
 
@@ -27,7 +27,7 @@ The GHASH is then calculated by `c+b1H^1+b2H^2+...+bnH^n` where `n` is the numbe
 
 c constant for a fixed nonce, and H is constant throughout, this suggests a nonce reuse attack. Luckily the nonce is calculated using `sessionid + Random.get_random_bytes(2)`, so nonce reuse will be very common.
 
-##Calculating c and H
+## Calculating c and H
 
 
 Since we need to forge 2 blocks in the final payload, our payload should be 2 blocks
@@ -45,7 +45,7 @@ Supposing `ct12=ct22`(equivalent to `pt11=pt12`), `c` and `H` can easily be foun
 `H=(g1-g2)/(ct11-ct21) (mod n)`
 `c=g1-ct11*H-ct12*H**2 (mod n)`
 
-##Forging
+## Forging
 
 Forging is now very simple. The text we want to forge is `f="may i please have the flag"`
 

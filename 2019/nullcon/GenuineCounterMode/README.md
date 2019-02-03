@@ -57,6 +57,6 @@ GASH is `c+f1*H+f2*H**2` where `f1` is the first 16 characters/128 bits
 
 Full exploit: [solve.py](./solve.py)
 
-> Flag: didnt save it:/
+> Flag: `hackim19{forb1dd3n_made_e4sy_a7gh12}`
 
 p.s. A much simpler way of getting c is literally xoring the last block of the ciphertext with the plaintext, since `c=AESECB(k,nonce+'\x00\x00\x00\x01)` and the first plaintext is xored with the exact same value

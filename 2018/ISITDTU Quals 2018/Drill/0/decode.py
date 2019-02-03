@@ -8,4 +8,3 @@ print mcode
 pw="".join([mclist[i] for i in mcode])
 print pw
 print pw.lower()
-

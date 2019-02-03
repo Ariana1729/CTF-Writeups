@@ -172,7 +172,7 @@ _N3x7-v3R51ON-h45-AnTI-4NTi-ant1-D3bUg_
 
 The last solution looks like a flag, and it works! 
 
->Flag: CTF{_N3x7-v3R51ON-h45-AnTI-4NTi-ant1-D3bUg_}
+>Flag: `CTF{_N3x7-v3R51ON-h45-AnTI-4NTi-ant1-D3bUg_}`
 
 p.s. After the competition I found out that both x(func name, english) and х(param,cryillic) are different
 

@@ -7,6 +7,6 @@ That video is identical to what something like a ethernet would send as a bit st
 
 ![a picture is supposed to be here to explain this more clearly](pic.png)
 
-Then the bit stream was transcribed by hand and `solve.py` decodes it, the flag is [sacrilegious](https://www.youtube.com/watch?v=BvsvaCU6i1M)
+Then the bit stream was transcribed by hand and [solve.py](solve.py) decodes it, the flag is [sacrilegious](https://www.youtube.com/watch?v=BvsvaCU6i1M)
 
-> Flag: please run `solve.py` to get flag im not typing it here XD
+> Flag: please run [solve.py](solve.py) to get flag im not typing it here XD

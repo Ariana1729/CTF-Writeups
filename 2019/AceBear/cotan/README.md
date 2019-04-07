@@ -30,6 +30,6 @@ c=i(u^n+1)/(u^n-1)
 u^n=(c+i)/(c-i)
 ```
 
-Now it's just a discrete log problem, which takes some time to solve(15mins on my old and broken laptop)
+Now it's just a discrete log problem, which takes some time to [solve](solve.sage)(15mins on my old and broken laptop)
 
 > Flag: `AceBear{_I_h0p3__y0u_3nj0y3d_1t_}`

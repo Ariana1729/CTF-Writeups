@@ -1,5 +1,6 @@
 # cotan
->(lost)
+>A description of the challenge was also provided along with the source code. Please have a look at cotan.pdf.
+>Challenge files: [cotan.pdf](cotan.pdf), [cotan.py](cotan.pdf).
 
 The challenge name suggests that the elliptic curve is singular.
 

@@ -11,3 +11,7 @@
 [nullcon](./2019/nullcon/README.md) (with HATS SG)
 
 [EvlzCTF](./2019/EvlzCTF/README.md) (with OTA)
+
+[AceBear](./2019/AceBear/README.md) (with OTA)
+
+[hsctf](./2019/hsctf/README.md) (with OTA)

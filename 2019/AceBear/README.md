@@ -1,4 +1,4 @@
-Crpyto:
+Crypto:
 
 cotan(1000):
 

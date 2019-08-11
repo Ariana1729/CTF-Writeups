@@ -12,9 +12,9 @@ Aron(unintended)(128,129):
 
 Aron(intended?)(128,129):
 
-[writeup](Aron%28maybe%20unintended%29/README.md)
+[writeup](Aron%28maybe%20intended%29/README.md)
 
-[script](Aron%28maybe%20unintended%29/solve.py)
+[script](Aron%28maybe%20intended%29/solve.py)
 
 Clever Girl(144):
 

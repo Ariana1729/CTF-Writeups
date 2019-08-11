@@ -79,7 +79,6 @@ which satisfies 2,4,6
 The flag is given by
 
 ```
-
 flag = 'CCTF{' + sha256(str(u) + str(v) + str(x) + str(y)).hexdigest() + '}'
 ```
 

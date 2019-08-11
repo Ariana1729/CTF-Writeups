@@ -15,3 +15,5 @@
 [AceBear](./2019/AceBear/README.md) (with OTA)
 
 [hsctf](./2019/hsctf/README.md) (with OTA)
+
+[CryptoCTF](2019/CryptoCTF/README.md) (with HATS SG)

@@ -1,9 +1,9 @@
 #!/usr/bin/env sage
 from sage.all import *
-#from threshold import set_threshold
+from threshold import set_threshold
 import random
 
-FLAG = 'abcdefg'#open("/flag", "r").read()
+FLAG = open("/flag", "r").read()
 
 
 def launch_attack(P, Q, p):
@@ -74,14 +74,13 @@ def receive_publickey(E):
 
 
 def banner():
-    #with open("/banner", "r") as f:
-    #    print(f.read())
-    print('banner')
+    with open("/banner", "r") as f:
+        print(f.read())
 
 
 def main():
     banner()
-    threshold = 50862679719146437000369425358088382777936359146843297277758901997635#set_threshold()
+    threshold = set_threshold()
     E, P = curve_agreement(threshold)
     Q = receive_publickey(E)
     if attack(E, P, Q):

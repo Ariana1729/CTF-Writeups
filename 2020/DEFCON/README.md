@@ -1,12 +1,12 @@
 Crypto:
 
-notbefoooled(?):
+notbefoooled(143):
 
 [writeup](notbefoooled/README.md)
 
 [scropt](notbefoooled/solve.py)
 
-coooppersmith(?):
+coooppersmith(130):
 
 [writeup](coooppersmith/README.md)
 

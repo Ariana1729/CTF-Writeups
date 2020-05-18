@@ -4,7 +4,7 @@ notbefoooled(143):
 
 [writeup](notbefoooled/README.md)
 
-[scropt](notbefoooled/solve.py)
+[script](notbefoooled/solve.py)
 
 coooppersmith(130):
 

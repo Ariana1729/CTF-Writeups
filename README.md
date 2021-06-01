@@ -1,5 +1,7 @@
 # CTF-Writeups
 
+Note that this have been migrated over to [my GH site](https://ariana1729.github.io/writeups.html)
+
 2018:
 
 [Google CTF quals](2018/Google%20CTF%20Quals%202018/README.md) (with HATS SG)
